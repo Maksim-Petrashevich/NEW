@@ -8,6 +8,7 @@ def is_prime(arg1):
       return True
     else:
         return False
+print("Работа функции проверки на (не )простое число")
 a = int(input("Введите число: "))
 if is_prime(a) is True:
     print("Число простое")
@@ -31,15 +32,17 @@ def argument(input):
         return len(words)
     else:
         return "Неизвестный тип данных"
+print("Работа функции с агрументами")
 print(argument([1, 2, 3, 4]))
 print(argument({'a':4, 'b': 6, 'c':0, 'd':7,'e':9}))
 print(argument(12345))
 print(argument("Это строка"))
 def findpositive(matrix):
     for rew in matrix:
-        if all(x>0 for x in row):
+        if all(x>=0 for x in row):
             return row, sum(row)
         return None, 0
+print("Работа функции с матрицей")
 row=int(input("Введите количество строк: "))
 cols=int(input("Введите количество столбцов: "))
 matrix = []
@@ -54,6 +57,7 @@ if result:
     print(f"\nСумма элементов строки: {summ}")
 else:
     print(f"\nВ матрице нет строки, в которой все элементы положительные")
+    print("Работает фукнция try/except/finally")
 def divide(a, b):
     try:
         result = a/b
