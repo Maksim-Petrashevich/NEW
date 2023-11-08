@@ -64,4 +64,7 @@ def third():
                 total += int(item[:-5])
         subjects[subject]=total
     print(subjects)
+
+print(first())
+print(second())
 print(third())
